@@ -36,8 +36,6 @@ opcodesInstructions = {
   "JMPZ": 2,
 }
 
-stack = []
-
 labels = {}
 
 global linePointer
