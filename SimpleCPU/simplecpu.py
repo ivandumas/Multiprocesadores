@@ -119,11 +119,6 @@ def sub(elem1,elem2,elem3):
 
 def jmpz(reg,label):
   global linePointer
-  #print("FUNCION JUMP IF EQUAL")
-  #print(flag,label)
-  global linePointer
-  #print("FUNCION JUMP IF EQUAL")
-  #print(flag,label)
   if (label in labels) and (reg in registers):
     if (int(registers[reg])==0):
       linePointer=labels[label]
