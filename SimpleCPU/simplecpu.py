@@ -33,7 +33,7 @@ opcodesInstructions = {
   "MOV" : 2,
   "ADD" : 3,
   "SUB" : 3,
-  "JMPZ": 2,
+  "JMPZ": 2
 }
 
 labels = {}
@@ -219,4 +219,4 @@ def analysis(file):
     printMemory()
 
 if __name__ == "__main__":
-  analysis("example3.asm")
+  analysis("SimpleCPU/example2.asm")
