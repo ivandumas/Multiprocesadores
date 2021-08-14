@@ -151,7 +151,6 @@ def analysis(file):
   linePointer = 0
   asmlist = format(file)
 
-  equal = False
   finished = False
 
   while(not finished):
