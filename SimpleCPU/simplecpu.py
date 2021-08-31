@@ -230,10 +230,10 @@ def checkInstruction(line, index):
     values.append(index)
     return values
 
-def analysis(asmlist):
+def analysis():
   global linePointer
   linePointer = 0
-  asmlist = format("example3.asm")
+  asmlist = format("example1.asm")
 
   equal = False
   finished = False
@@ -280,4 +280,4 @@ def analysis(asmlist):
   printStack()
 
 if __name__ == "__main__":
-  analysis("example3.asm")
+  analysis()

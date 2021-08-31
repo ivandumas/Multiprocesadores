@@ -1,0 +1,141 @@
+vsim -gui work.alu work.asyncmem work.controllerfsm work.controllerfsm_sv_unit work.controlunit work.datamem work.datapath work.rf work.simplecpu work.simplecpu_tb
+# vsim -gui work.alu work.asyncmem work.controllerfsm work.controllerfsm_sv_unit work.controlunit work.datamem work.datapath work.rf work.simplecpu work.simplecpu_tb 
+# Start time: 00:13:59 on Aug 30,2021
+# Loading sv_std.std
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/rst \
+sim:/simplecpu_tb/uut/clk \
+sim:/simplecpu_tb/uut/pc \
+sim:/simplecpu_tb/uut/addr \
+sim:/simplecpu_tb/uut/data \
+sim:/simplecpu_tb/uut/rd \
+sim:/simplecpu_tb/uut/D_addr \
+sim:/simplecpu_tb/uut/D_rd \
+sim:/simplecpu_tb/uut/D_wr \
+sim:/simplecpu_tb/uut/D_dataout \
+sim:/simplecpu_tb/uut/D_datain \
+sim:/simplecpu_tb/uut/RF_s \
+sim:/simplecpu_tb/uut/RF_W_addr \
+sim:/simplecpu_tb/uut/RF_W_wr \
+sim:/simplecpu_tb/uut/RF_Rp_addr \
+sim:/simplecpu_tb/uut/RF_Rp_rd \
+sim:/simplecpu_tb/uut/RF_Rq_addr \
+sim:/simplecpu_tb/uut/RF_Rq_rd \
+sim:/simplecpu_tb/uut/alu_s0
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/simplecpu/controller/clk
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/instmem/raddr \
+sim:/simplecpu_tb/uut/instmem/waddr \
+sim:/simplecpu_tb/uut/instmem/data_in \
+sim:/simplecpu_tb/uut/instmem/we \
+sim:/simplecpu_tb/uut/instmem/ren \
+sim:/simplecpu_tb/uut/instmem/clk \
+sim:/simplecpu_tb/uut/instmem/data_out \
+sim:/simplecpu_tb/uut/instmem/mem_array
+run
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/rst \
+sim:/simplecpu_tb/uut/clk \
+sim:/simplecpu_tb/uut/pc \
+sim:/simplecpu_tb/uut/addr \
+sim:/simplecpu_tb/uut/data \
+sim:/simplecpu_tb/uut/rd \
+sim:/simplecpu_tb/uut/D_addr \
+sim:/simplecpu_tb/uut/D_rd \
+sim:/simplecpu_tb/uut/D_wr \
+sim:/simplecpu_tb/uut/D_dataout \
+sim:/simplecpu_tb/uut/D_datain \
+sim:/simplecpu_tb/uut/RF_s \
+sim:/simplecpu_tb/uut/RF_W_addr \
+sim:/simplecpu_tb/uut/RF_W_wr \
+sim:/simplecpu_tb/uut/RF_Rp_addr \
+sim:/simplecpu_tb/uut/RF_Rp_rd \
+sim:/simplecpu_tb/uut/RF_Rq_addr \
+sim:/simplecpu_tb/uut/RF_Rq_rd \
+sim:/simplecpu_tb/uut/alu_s0
+# Break key hit
+restart
+run -continue
+run -continue
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/rst \
+sim:/simplecpu_tb/uut/clk \
+sim:/simplecpu_tb/uut/pc \
+sim:/simplecpu_tb/uut/addr \
+sim:/simplecpu_tb/uut/data \
+sim:/simplecpu_tb/uut/rd \
+sim:/simplecpu_tb/uut/D_addr \
+sim:/simplecpu_tb/uut/D_rd \
+sim:/simplecpu_tb/uut/D_wr \
+sim:/simplecpu_tb/uut/D_dataout \
+sim:/simplecpu_tb/uut/D_datain \
+sim:/simplecpu_tb/uut/RF_s \
+sim:/simplecpu_tb/uut/RF_W_addr \
+sim:/simplecpu_tb/uut/RF_W_wr \
+sim:/simplecpu_tb/uut/RF_Rp_addr \
+sim:/simplecpu_tb/uut/RF_Rp_rd \
+sim:/simplecpu_tb/uut/RF_Rq_addr \
+sim:/simplecpu_tb/uut/RF_Rq_rd \
+sim:/simplecpu_tb/uut/alu_s0
+run -continue
+run -continue
+run -continue
+restart
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/rst \
+sim:/simplecpu_tb/uut/clk \
+sim:/simplecpu_tb/uut/pc \
+sim:/simplecpu_tb/uut/addr \
+sim:/simplecpu_tb/uut/data \
+sim:/simplecpu_tb/uut/rd \
+sim:/simplecpu_tb/uut/D_addr \
+sim:/simplecpu_tb/uut/D_rd \
+sim:/simplecpu_tb/uut/D_wr \
+sim:/simplecpu_tb/uut/D_dataout \
+sim:/simplecpu_tb/uut/D_datain \
+sim:/simplecpu_tb/uut/RF_s \
+sim:/simplecpu_tb/uut/RF_W_addr \
+sim:/simplecpu_tb/uut/RF_W_wr \
+sim:/simplecpu_tb/uut/RF_Rp_addr \
+sim:/simplecpu_tb/uut/RF_Rp_rd \
+sim:/simplecpu_tb/uut/RF_Rq_addr \
+sim:/simplecpu_tb/uut/RF_Rq_rd \
+sim:/simplecpu_tb/uut/alu_s0
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+run -continue
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/state \
+sim:/simplecpu_tb/uut/controller/fsm/nxtstate
+run
+restart
+run
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/instruction
+restart
+run
+restart
+run
+# End time: 00:54:36 on Aug 30,2021, Elapsed time: 0:40:37
+# Errors: 0, Warnings: 1
