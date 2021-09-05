@@ -1,0 +1,27 @@
+# Compile of Sad_fin_tb.sv was successful.
+vsim -gui work.Sad_fin_tb
+# vsim -gui work.Sad_fin_tb 
+# Start time: 18:53:27 on Sep 04,2021
+# Loading sv_std.std
+# Loading work.Sad_fin_tb
+# ** Error: (vsim-3033) Instantiation of 'sad' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Sad_fin_tb File: C:/Users/ivand/Desktop/Multiprocesadores/SAD/Sad_fin_tb.sv Line: 16
+#         Searched libraries:
+#             C:/Users/ivand/Desktop/Multiprocesadores/SAD/work
+# Error loading design
+# End time: 18:53:27 on Sep 04,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 5
+restart -f
+# No Design Loaded!
+vsim -gui work.Sad_fin_tb
+# vsim -gui work.Sad_fin_tb 
+# Start time: 18:54:49 on Sep 04,2021
+# Loading sv_std.std
+# Loading work.Sad_fin_tb
+# ** Error: (vsim-3033) Instantiation of 'sad' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /Sad_fin_tb File: C:/Users/ivand/Desktop/Multiprocesadores/SAD/Sad_fin_tb.sv Line: 16
+#         Searched libraries:
+#             C:/Users/ivand/Desktop/Multiprocesadores/SAD/work
+# Error loading design
+# End time: 18:54:50 on Sep 04,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
