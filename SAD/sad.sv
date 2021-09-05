@@ -8,12 +8,14 @@ module sad (
     output  logic 			AB_rd,
 	output logic [31:0]  	sad);
 
+
     controller control(.go(go),.i_lt_256(i_lt_256),.AB_rd(AB),
 i_inc,
 i_clr,
 sum_ld,
 sum_clr,
 sadreg_ld,
-sadreg_clr);)
+sadreg_clr);
+
  
 endmodule
