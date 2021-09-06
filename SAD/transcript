@@ -34,3 +34,14 @@
 # Compile of cmp.sv failed with 1 errors.
 # Compile of cmp.sv failed with 1 errors.
 # Compile of cmp.sv was successful.
+# Compile of AB_abs.sv was successful.
+# Compile of cmp.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of icounter.sv was successful.
+# Compile of sad.sv was successful.
+# Compile of Sad_fin_tb.sv was successful.
+# Compile of sadR.sv was successful.
+# Compile of sumB.sv was successful.
+# Compile of sumR.sv was successful.
+# 10 compiles, 0 failed with no errors.
