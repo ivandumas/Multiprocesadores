@@ -1,1 +1,16 @@
+C:/Users/ivand/Desktop/Multiprocesadores/SAD/sumador.sv {0 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/SAD/sumador.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sumador
+** Error: C:/Users/ivand/Desktop/Multiprocesadores/SAD/sumador.sv(7): (vlog-2730) Undefined variable: 'sum_out'.
 
+} {4.0 5.0} {}} C:/Users/ivand/Desktop/Multiprocesadores/SAD/datapath.sv {0 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/SAD/datapath.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datapath
+** Error: (vlog-13069) C:/Users/ivand/Desktop/Multiprocesadores/SAD/datapath.sv(12): near "output": syntax error, unexpected output, expecting ')'.
+
+} {4.0 5.0} {}} C:/Users/ivand/Desktop/Multiprocesadores/SAD/sad.sv {0 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/SAD/sad.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module sad
+** Error: (vlog-13069) C:/Users/ivand/Desktop/Multiprocesadores/SAD/sad.sv(13): near "i_inc": syntax error, unexpected IDENTIFIER, expecting .* or '.'.
+
+} {4.0 5.0} {}}
