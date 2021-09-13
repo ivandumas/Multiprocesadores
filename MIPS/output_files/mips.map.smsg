@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at fetch.sv(4): object "pc" differs only in case from object "PC" in the same scope File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/fetch.sv Line: 4
