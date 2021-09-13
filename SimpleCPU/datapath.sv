@@ -10,10 +10,13 @@ module datapath (
 	input  logic 			RF_Rq_rd,
 	input  logic 			alu_s0,
 	input  logic [15:0]	DM_Din,
+<<<<<<< HEAD
 	input  logic [7:0]	Val_cons,
 	input  logic			RF_cons,
 	input  logic			RF_ext,
 	output logic         RF_Rp_zero,
+=======
+>>>>>>> parent of 501942d (six instruction first commit)
 	output logic [15:0]	Rp_data
 	);
 
@@ -27,12 +30,19 @@ module datapath (
 	logic [15:0]	Rq_data;
 	logic [15:0]	alu_res;
 	
+<<<<<<< HEAD
 	
 		// MUX Behavioral Description
 		always_comb muxout = RF_s ? DM_Din : alu_res;
 		always_comb valCte = RF_cons ? Val_cons : muxout;
 		always_comb negative = RF_ext ? ~valCte+1'b1 : valCte;
 		always_comb RF_Rp_zero=~(16'b0| Rp_data);
+=======
+		// MUX Behavioral Description
+		always_comb muxout = RF_s ? DM_Din : alu_res;
+		
+>>>>>>> parent of 501942d (six instruction first commit)
+	
 	
 	rf	RegBank	(
 		.clk(clk),					// input clk

@@ -2,7 +2,76 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "RegWrite",
+					"strict" : false
+				},
+				{
+					"name" : "RegDst",
+					"strict" : false
+				},
+				{
+					"name" : "Branch",
+					"strict" : false
+				},
+				{
+					"name" : "ALUSrc",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUOp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "MemRead",
+					"strict" : false
+				},
+				{
+					"name" : "MemWrite",
+					"strict" : false
+				},
+				{
+					"name" : "MemToReg",
+					"strict" : false
+				},
+				{
+					"name" : "PCSrc",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[5]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[4]",
+					"strict" : false
+				},
+				{
+					"name" : "zero",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

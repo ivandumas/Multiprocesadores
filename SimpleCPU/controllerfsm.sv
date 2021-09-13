@@ -185,7 +185,7 @@ module controllerfsm (
 							RF_cons		= 1'b0;
 							RF_ext		= 1'b1;
 							
-						end		
+						end	
 		endcase
 	end
 	
