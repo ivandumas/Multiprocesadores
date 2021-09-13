@@ -35,23 +35,14 @@ module simplecpu_tb;
 			uut.datamemory.mem_array[i] = {8'h0,randdata[7:0]};  
 			end	
 			
-		uut.instmem.mem_array[0] = 16'b0000_0001_00000001;
-		uut.instmem.mem_array[1] = 16'b0000_0010_00000010;
-		uut.instmem.mem_array[2] = 16'b0000_0011_00000011;
-		uut.instmem.mem_array[3] = 16'b0000_0100_00000100;
-		uut.instmem.mem_array[4] = 16'b0000_0101_00000101;
-		uut.instmem.mem_array[5] = 16'b0000_0110_00000110;
-		uut.instmem.mem_array[6] = 16'b0000_0111_00000111;
-		uut.instmem.mem_array[7] = 16'b0000_0001_00001000;
-		uut.instmem.mem_array[8] = 16'b0000_0010_00001001;
-		uut.instmem.mem_array[9] = 16'b0000_0011_00001010;
-		uut.instmem.mem_array[10] = 16'b0000_0100_00001011;
-		uut.instmem.mem_array[11] = 16'b0000_0101_00001100;
-		uut.instmem.mem_array[12] = 16'b0000_0110_00001101;
-		uut.instmem.mem_array[13] = 16'b0000_0111_00001110;
-		uut.instmem.mem_array[14] = 16'b0010_0001_0010_0011;
-		uut.instmem.mem_array[15] = 16'b0010_0100_0101_0110;
-
+		uut.instmem.mem_array[0] = 16'h0005;
+		uut.instmem.mem_array[1] = 16'h0106;
+		uut.instmem.mem_array[2] = 16'h0207;
+		uut.instmem.mem_array[3] = 16'h2001;
+		uut.instmem.mem_array[4] = 16'h2002;
+		uut.instmem.mem_array[5] = 16'h1005;
+		uut.instmem.mem_array[6] = 16'hFFFF;
+		uut.instmem.mem_array[7] = 16'hFFFF;
 
 		
 		#20000

@@ -8,12 +8,17 @@ module controlunit (
 	output logic 			D_rd,
 	output logic			D_wr,
 	output logic			RF_s,
+	output logic [7:0] 	Val_cons,
+	output logic			RF_cons,
+	output logic			RF_ext,
 	output logic [3:0]	RF_W_addr,
 	output logic			RF_W_wr,
 	output logic [3:0]	RF_Rp_addr,
 	output logic			RF_Rp_rd,
 	output logic [3:0]	RF_Rq_addr,
 	output logic 			RF_Rq_rd,
+	input  logic         RF_Rp_zero,
+	output logic [7:0] 	RF_W_data,
 	output logic 			alu_s0
 	);
 	
@@ -22,6 +27,7 @@ module controlunit (
 	logic				ld;
 	logic				clr;
 	logic [15:0]	instruction_reg;
+	logic				PC_ld;//Señal agregar PC+offset
 	
 	// Program Counter Hardware description
 	// This always statement describes a register with a combinatorial incrementer at the 'D' input
@@ -31,13 +37,17 @@ module controlunit (
 			progcntr <= '0;
 		else if (up)
 			progcntr <= progcntr + 1'b1;
-	
-
+		else if (PC_ld)
+			progcntr <= progcntr + instruction_reg[7:0] - 1'b1;
+		 
 	always_ff @ (posedge clk)
 		if (rst)
 			instruction_reg <= '0;
 		else if (ld)
 			instruction_reg <= inst;
+			
+	always_ff @(posedge clk)
+	    RF_W_data <= instruction_reg[7:0];
 	
 	
 	controllerfsm fsm (
@@ -58,6 +68,11 @@ module controlunit (
 								.RF_Rp_rd	(RF_Rp_rd),
 								.RF_Rq_addr	(RF_Rq_addr),
 								.RF_Rq_rd	(RF_Rq_rd),
+								.Val_cons	(Val_cons),
+								.RF_cons		(RF_cons),
+								.RF_ext		(RF_ext),
+								.RF_Rp_zero	(RF_Rp_zero),
+								.PC_ld		(PC_ld),
 								.alu_s0		(alu_s0)
 							);
 								

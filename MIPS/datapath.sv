@@ -1,16 +1,19 @@
 module datapath (
     input logic clk,rst,
-    input logic RegWrite,AluOp,RegDst,MemRead,MemWrite,AluSrc,MemToReg
+    input logic RegWrite,AluOp,RegDst,MemRead,MemWrite,AluSrc,MemToReg,PCSrc
 
 );
 
 logic [31:0] instruction;
-logic [11:0] pc_fetch;
+logic [31:0] pc_fetch;
 logic [31:0] toW_data,toA,toB,r_data2,alu_out,toMemMux;
 logic [4:0] toW_reg;
 
-pc InstFetch(
+pc InstructionFetch(
 	.clk(clk),
+	.rst(rst), 
+	.PCSrc(PCSrc),
+    .pc_offset({16'hFFFF,instruction[15:0]}),
 	.pc(pc_fetch)
 );
 
@@ -36,7 +39,7 @@ regmem Registers(
 		);
 
 always_comb begin : muxtoALU
-    toB = (AluSrc) ? {16'h0000,instruction[15:0]} : r_data2;
+    toB = (AluSrc) ? {16'hFFFF,instruction[15:0]} : r_data2;
 end
 
 alu ALU(

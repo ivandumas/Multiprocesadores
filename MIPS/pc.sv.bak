@@ -1,11 +1,11 @@
 module pc (
-	input logic clk, rst, PCSrc,
-    input logic [31:0] pc_offset,
-	output logic [31:0] pc
+	input logic clk, rst, PCSrc
+    input logic [11:0] pc_offset,
+	output logic [11:0] pc
 );
 
-logic [31:0] pc_d,pc_q,pc_inc;
-logic [31:0] offshift;
+logic [10:0] pc_d,pc_q,pc_inc;
+logic [11:0] offshift;
 
 always_comb begin : PCoffset
     offshift = pc_offset << 2; //Shift left 2 positions (to multiply by 4)

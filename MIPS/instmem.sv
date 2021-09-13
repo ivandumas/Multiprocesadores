@@ -1,10 +1,10 @@
 module instmem(
-	input logic [11:0] read_addr, 
+	input logic [31:0] read_addr, 
    output logic [31:0] inst
 );
 
    
-   logic [31:0] mem_array [0:4095];
+   logic [31:0] mem_array [0:1023];
 
    // always_comb begin : blockName
    //     mem_array[0]=32'h0000_0000;

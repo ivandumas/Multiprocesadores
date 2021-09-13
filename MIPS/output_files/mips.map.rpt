@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips
-Sun Sep 12 14:55:14 2021
+Sun Sep 12 21:27:37 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -17,10 +17,11 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   9. Port Connectivity Checks: "datamem:DataMemory"
  10. Port Connectivity Checks: "alu:ALU"
  11. Port Connectivity Checks: "instmem:IntructionMemory"
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
- 15. Analysis & Synthesis Suppressed Messages
+ 12. Port Connectivity Checks: "pc:InstFetch"
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
+ 16. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -47,7 +48,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Sep 12 14:55:13 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 12 21:27:37 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips                                        ;
 ; Top-level Entity Name           ; datapath                                    ;
@@ -175,10 +176,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                              ; Library ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
+; pc.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv       ;         ;
 ; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv ;         ;
 ; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv      ;         ;
 ; regmem.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv   ;         ;
-; fetch.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/fetch.sv    ;         ;
 ; datamem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv  ;         ;
 ; instmem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv  ;         ;
 +----------------------------------+-----------------+------------------------------+-----------------------------------------------------------+---------+
@@ -264,6 +265,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "pc:InstFetch"                                                                                                                                    ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                                                      ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; rst       ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; PCSrc     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; pc_offset ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-----------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-------------------+---------------------------------+
@@ -291,18 +303,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Sep 12 14:55:04 2021
+    Info: Processing started: Sun Sep 12 21:27:23 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c mips
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
+    Info (12023): Found entity 1: pc File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
     Info (12023): Found entity 1: datapath File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: alu File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regmem.sv
     Info (12023): Found entity 1: regmem File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file fetch.sv
-    Info (12023): Found entity 1: fetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/fetch.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datamem.sv
     Info (12023): Found entity 1: datamem File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mips_tb.sv
@@ -312,15 +324,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file mips.sv
 Info (12021): Found 1 design units, including 1 entities, in source file instmem.sv
     Info (12023): Found entity 1: instmem File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv Line: 1
 Info (12127): Elaborating entity "datapath" for the top level hierarchy
-Info (12128): Elaborating entity "fetch" for hierarchy "fetch:InstFetch" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
-Warning (10230): Verilog HDL assignment warning at fetch.sv(9): truncated value with size 32 to match size of target (11) File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/fetch.sv Line: 9
+Info (12128): Elaborating entity "pc" for hierarchy "pc:InstFetch" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at pc.sv(15): truncated value with size 32 to match size of target (11) File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at pc.sv(19): truncated value with size 12 to match size of target (11) File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv Line: 19
 Info (12128): Elaborating entity "instmem" for hierarchy "instmem:IntructionMemory" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 20
-Warning (10030): Net "mem_array[2..2047]" at instmem.sv(7) has no driver or initial value, using a default initial value '0' File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv Line: 7
+Warning (10858): Verilog HDL warning at instmem.sv(7): object mem_array used but never assigned File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv Line: 7
 Info (12128): Elaborating entity "regmem" for hierarchy "regmem:Registers" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 36
 Warning (10240): Verilog HDL Always Construct warning at regmem.sv(14): inferring latch(es) for variable "i", which holds its previous value in one or more paths through the always construct File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv Line: 14
 Info (12128): Elaborating entity "alu" for hierarchy "alu:ALU" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 47
 Info (12128): Elaborating entity "datamem" for hierarchy "datamem:DataMemory" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 58
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/ivand/Desktop/Multiprocesadores/MIPS/output_files/mips.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -337,11 +350,11 @@ Warning (21074): Design contains 9 input pin(s) that do not drive logic
 Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
-    Info: Peak virtual memory: 4796 megabytes
-    Info: Processing ended: Sun Sep 12 14:55:14 2021
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 4798 megabytes
+    Info: Processing ended: Sun Sep 12 21:27:37 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 
 +------------------------------------------+
