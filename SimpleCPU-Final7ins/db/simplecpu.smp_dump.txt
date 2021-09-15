@@ -1,0 +1,14 @@
+
+State Machine - |simplecpu|controlunit:controller|controllerfsm:fsm|state
+Name state.JMP state.NOT state.JMZ state.SUB state.LOC state.ADD state.STORE state.LOAD state.DECODE state.FETCH state.INIT 
+state.INIT 0 0 0 0 0 0 0 0 0 0 0 
+state.FETCH 0 0 0 0 0 0 0 0 0 1 1 
+state.DECODE 0 0 0 0 0 0 0 0 1 0 1 
+state.LOAD 0 0 0 0 0 0 0 1 0 0 1 
+state.STORE 0 0 0 0 0 0 1 0 0 0 1 
+state.ADD 0 0 0 0 0 1 0 0 0 0 1 
+state.LOC 0 0 0 0 1 0 0 0 0 0 1 
+state.SUB 0 0 0 1 0 0 0 0 0 0 1 
+state.JMZ 0 0 1 0 0 0 0 0 0 0 1 
+state.NOT 0 1 0 0 0 0 0 0 0 0 1 
+state.JMP 1 0 0 0 0 0 0 0 0 0 1 

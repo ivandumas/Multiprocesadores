@@ -44,6 +44,7 @@ opcodesInstructions = {
 stack = []
 labels = {}
 jumps = {}
+index = 0
 
 def format(filename):
   asm_file = open(filename)
@@ -81,6 +82,7 @@ def error(text, index):
     exit()
 
 def mov(args):
+    global index
     if (len(args)!=opcodesInstructions["MOV"]+1):
         error("More arguments of MOV",args[-1])
     if args[0] in registers:
@@ -94,7 +96,9 @@ def mov(args):
             listToString1="".join(args[1])
             num1=int(listToString1)
             binario1="{0:08b}".format(num1)
-            print("MOV " + args[0] + ", " + args[1]+"\t 0000 "+binario+" "+binario1)
+            #print("MOV " + args[0] + ", " + args[1]+"\t  "+binario+" "+binario1)
+            print("uut.instmem.mem_array["+str(index)+"] ="+"\t 16'b0000_"+binario+"_"+binario1)
+            index += 1
             registers[args[0]] = memories[args[1]]
         elif args[1][0] == "#":
            #Convertimos a binario la parte de registros y número a cargar
@@ -107,7 +111,9 @@ def mov(args):
             pos5=listToString5.strip('#')
             num5=int(pos5)
             binario5="{0:08b}".format(num5)
-            print("MOV " + args[0] + ", #" + args[1][1:]+"\t 0011 "+binario4+" "+binario5)
+            #print("MOV " + args[0] + ", #" + args[1][1:]+"\t 0011 "+binario4+" "+binario5)
+            print("uut.instmem.mem_array["+str(index)+"] ="+"\t 16'b0011_"+binario4+"_"+binario5)
+            index += 1
             registers[args[0]] = args[1][1:]
         else:
             error(x)
@@ -122,7 +128,9 @@ def mov(args):
             listToString3="".join(args[0])
             num3=int(listToString3)
             binario3="{0:08b}".format(num3)
-            print("MOV " + args[0] + ", " + args[1]+"\t 0001 "+binario2+" "+binario3)
+            #print("MOV " + args[0] + ", " + args[1]+"\t 0001 "+binario2+" "+binario3)
+            print("uut.instmem.mem_array["+str(index)+"] ="+"\t 16'b0001_"+binario2+"_"+binario3)
+            index += 1
             memories[args[0]] = registers[args[1]]
         else:
             error("Second argument of MOV", args[-1])
@@ -130,6 +138,7 @@ def mov(args):
         error("First argument of MOV", args[-1])
 
 def add(args):
+    global index
     if (len(args)!=opcodesInstructions["ADD"]+1):
         error("More arguments of ADD",args[-1])
     if(args[0] in registers and args[1] in registers and args[2] in registers):
@@ -149,12 +158,15 @@ def add(args):
         num8=int(pos8)
         binario8="{0:04b}".format(num8)
         
-        print("ADD " + args[0] + ", " + args[1] + ", " + args[2]+"\t 0010 "+binario6+" "+binario7+" "+binario8)
+        #print("ADD " + args[0] + ", " + args[1] + ", " + args[2]+"\t 0010 "+binario6+" "+binario7+" "+binario8)
+        print("uut.instmem.mem_array["+str(index)+"] ="+"\t 16'b0010_"+binario6+"_"+binario7+"_"+binario8)
+        index += 1
         registers[args[0]] = str(int(registers[args[1]]) + int(registers[args[2]]))
     else:
         error("Wrong argument on ADD")
 
 def sub(args):
+    global index
     if (len(args)!=opcodesInstructions["SUB"]+1):
         error("More arguments of SUB",args[-1])
     if(args[0] in registers and args[1] in registers and args[2] in registers):
@@ -174,12 +186,14 @@ def sub(args):
         num11=int(pos11)
         binario11="{0:04b}".format(num11)
         
-        print("SUB " + args[0] + ", " + args[1] + ", " + args[2]+"\t 0100 "+binario9+" "+binario10+" "+binario11)
+        print("uut.instmem.mem_array["+str(index)+"] ="+"\t 16'b0100_"+binario9+"_"+binario10+"_"+binario11)
+        index += 1
         registers[args[0]] = str(int(registers[args[1]]) - int(registers[args[2]]))
     else:
         error("Wrong argument on SUB")
 
 def jmpz(args, linePointer):
+    global index
     if(len(args)!=opcodesInstructions["JMPZ"]+1):
         error("More arguments of JMPZ",args[-1])
     if(args[1] in jumps):
@@ -193,7 +207,9 @@ def jmpz(args, linePointer):
         num14=int(listToString14)
         binario14="{0:08b}".format(num14)
         
-        print("JMPZ " + args[0] + ", " + str(jumps[args[1]])+"\t 0101"+" "+binario13+" "+binario14)
+        #print("JMPZ " + args[0] + ", " + str(jumps[args[1]])+"\t 0101"+" "+binario13+" "+binario14)
+        print("uut.instmem.mem_array["+str(index)+"] ="+"\t 16'b0101_"+binario13+"_"+binario14)
+        index += 1
         
         if(registers[args[0]] == '0'):
             return jumps[args[1]]

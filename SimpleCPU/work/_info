@@ -11,252 +11,277 @@ cModel Technology
 dC:/intelFPGA_lite/20.1
 valu
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1630300310
+Z1 !s110 1631589515
 !i10b 1
-!s100 hGQXI=G=ZzheK44e@XAF33
+!s100 dzz>CO7AIh_ALg89=M?X^2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IlKfXzA_X6Q?;]>dnlj8e32
+IZjUzEl9>A@:4FAPbaA3<o1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 dC:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU
-w1630298790
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/alu.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/alu.sv
-!i122 19
-L0 1 11
-Z5 OV;L;2020.1;71
+w1631576759
+8C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\alu.sv
+FC:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\alu.sv
+!i122 345
+Z5 L0 1 22
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1630300310.000000
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/alu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/alu.sv|
+Z7 !s108 1631589515.000000
+!s107 C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\alu.sv|
 !i113 1
-Z7 o-work work -sv
-Z8 tCvgOpt 0
+Z8 o-work work -sv
+Z9 tCvgOpt 0
 vasyncmem
 R0
 R1
 !i10b 1
 !s100 Vz^_]BYT@]cfHCRo>4_We1
 R2
-IXaee8n>4=bcE3jd^3FlBe1
+IaV98NfUHQ7Y`PQL>Mj_F<1
 R3
 S1
 R4
-Z9 w1630298791
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/asyncmem.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/asyncmem.sv
-!i122 20
-Z10 L0 1 22
+w1631585477
+8C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/asyncmem.sv
+FC:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/asyncmem.sv
+!i122 346
 R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/asyncmem.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/asyncmem.sv|
-!i113 1
 R7
+!s107 C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/asyncmem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/asyncmem.sv|
+!i113 1
 R8
+R9
 vcontrollerfsm
 R0
-DXx4 work 21 controllerfsm_sv_unit 0 22 ?nl`iI:KnL66gDZ;TIXdc1
+DXx4 work 21 controllerfsm_sv_unit 0 22 Mj4SfT73NQT4KPhJ[F4O91
 R1
 R3
 r1
 !s85 0
 !i10b 1
-!s100 HjGm8h;KQbn4ElDkkfURc1
-IWaZTYm3ac4lA39WdHIm<N2
+!s100 _4J@lDU:oPY9GS>aU[V<m3
+I1iWPgh>_Wm>Wh?nKR^gPa0
 !s105 controllerfsm_sv_unit
 S1
 R4
-R9
-Z11 8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/controllerfsm.sv
-Z12 FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/controllerfsm.sv
-!i122 21
-L0 14 112
-R5
-31
+Z10 w1631588151
+Z11 8C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controllerfsm.sv
+Z12 FC:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controllerfsm.sv
+!i122 347
+L0 19 163
 R6
-Z13 !s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/controllerfsm.sv|
-Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/controllerfsm.sv|
-!i113 1
+31
 R7
+Z13 !s107 C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controllerfsm.sv|
+Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controllerfsm.sv|
+!i113 1
 R8
+R9
 Xcontrollerfsm_sv_unit
 R0
 R1
-V?nl`iI:KnL66gDZ;TIXdc1
+VMj4SfT73NQT4KPhJ[F4O91
 r1
 !s85 0
 !i10b 1
-!s100 <5AAVh<Q@lS=ILhNHo9ZS1
-I?nl`iI:KnL66gDZ;TIXdc1
+!s100 PcP8XGz@`[eK=Xn039hG`2
+IMj4SfT73NQT4KPhJ[F4O91
 !i103 1
 S1
 R4
-R9
+R10
 R11
 R12
-!i122 21
+!i122 347
 L0 1 0
-R5
-31
 R6
+31
+R7
 R13
 R14
 !i113 1
-R7
 R8
+R9
 vcontrolunit
 R0
 R1
 !i10b 1
-!s100 I9Q@P=Bdbi7:WEVSKiChB0
+!s100 ?Edh9>oJb0L43na9SLZA53
 R2
-I;[IVUQdPE8l_3LB@Gi>N53
+I@AXm8GeYzRBKF^Db`dWWW2
 R3
 S1
 R4
-R9
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/controlunit.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/controlunit.sv
-!i122 22
-L0 1 65
-R5
+w1631589495
+8C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controlunit.sv
+FC:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controlunit.sv
+!i122 348
+L0 1 76
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/controlunit.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/controlunit.sv|
-!i113 1
 R7
+!s107 C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controlunit.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\controlunit.sv|
+!i113 1
 R8
+R9
 vdatamem
 R0
 R1
 !i10b 1
 !s100 K];@T@3?BaB_35gRXFVEN2
 R2
-IH6@zdKSQdh6<iWXWVGai63
+IhaYhYe2Tk5cAD<Q>GIJb;2
 R3
 S1
 R4
-R9
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/datamem.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/datamem.sv
-!i122 23
-R10
+w1631562626
+8C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamem.sv
+FC:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamem.sv
+!i122 349
 R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/datamem.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/datamem.sv|
-!i113 1
 R7
+!s107 C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamem.sv|
+!i113 1
 R8
+R9
+vdatamux
+R0
+Z15 !s110 1631589516
+!i10b 1
+!s100 =CcRP0=3kB^Ho[;Toi@mb0
+R2
+Ia^9Ech<B`746mW<[zdDe81
+R3
+S1
+R4
+w1631577313
+8C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv
+FC:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv
+!i122 350
+L0 1 16
+R6
+r1
+!s85 0
+31
+Z16 !s108 1631589516.000000
+!s107 C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv|
+!i113 1
+R8
+R9
 vdatapath
 R0
-R1
+R15
 !i10b 1
-!s100 V5b;?jXLZa[9Lj`8nH_EE1
+!s100 BRl<<O[U7Mmhl:jnHo;a:3
 R2
-IPMj55kUOB^5UI5[m:FeKb0
+IB3TP`Fj:?<_d3;Me2]PJ33
 R3
 S1
 R4
-R9
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/datapath.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/datapath.sv
-!i122 24
-L0 1 50
-R5
+w1631589226
+8C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv
+FC:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv
+!i122 351
+L0 1 58
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/datapath.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/datapath.sv|
+R16
+!s107 C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv|
 !i113 1
-R7
 R8
+R9
 vrf
 R0
-R1
+R15
 !i10b 1
 !s100 HT:;LYO3K?;YLUgG_=ZV>0
 R2
-I1Pd2SBLUc>7;aB4zTiZHC0
+I4]<Z:QhLZG@gh^1dJh_>[3
 R3
 S1
 R4
-R9
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/rf.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/rf.sv
-!i122 25
+w1631584574
+8C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv
+FC:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv
+!i122 352
 L0 1 38
-R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/rf.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/rf.sv|
+R16
+!s107 C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv|
 !i113 1
-R7
 R8
+R9
 vsimplecpu
 R0
-!s110 1630300311
+R15
 !i10b 1
-!s100 L5FA[0OITP<zGS?cPe<::3
+!s100 :79K76X3P<gd;LN2dW]LB0
 R2
-Ij]jkKj:hXj:V^UPHkU=kF2
+ITX0oYEB[CP25d9fkffQ1@3
 R3
 S1
 R4
-R9
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu.sv
-!i122 26
-L0 1 70
-R5
+w1631582910
+8C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/simplecpu.sv
+FC:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/simplecpu.sv
+!i122 353
+L0 1 72
+R6
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu.sv|
+R16
+!s107 C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/simplecpu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/simplecpu.sv|
 !i113 1
-R7
 R8
+R9
 vsimplecpu_tb
 R0
-R1
+R15
 !i10b 1
-!s100 Hff73jflCN1]^A@Hi4nz`1
+!s100 dNXIKklWCGG``@cA>@JcG3
 R2
-I6:Dm@2@o>P1@6WGCSVUCd2
+Iz1R=e>UzU>975VglO_QlJ2
 R3
 S1
 R4
-w1630300302
-8C:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu_tb.sv
-FC:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu_tb.sv
-!i122 18
-L0 2 107
-R5
+w1631582615
+8C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\simplecpu_tb.sv
+FC:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\simplecpu_tb.sv
+!i122 354
+L0 2 106
+R6
 r1
 !s85 0
 31
-!s108 1630300309.000000
-!s107 C:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu_tb.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Downloads/course_files_export/SimpleCPU/simplecpu_tb.sv|
+R16
+!s107 C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\simplecpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ivand\Desktop\Multiprocesadores\SimpleCPU\simplecpu_tb.sv|
 !i113 1
-R7
 R8
+R9

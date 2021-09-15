@@ -1,16 +1,9 @@
-MOV R1, 14;
-MOV R2, 13;
-MOV R3, 12;
-MOV R4, 11;
-MOV R5, 10;
-MOV R6, 9;
-MOV R7, 8;
-MOV R1, 7;
-MOV R2, 6;
-MOV R3, 5;
-MOV R4, 4;
-MOV R5, 3;
-MOV R6, 2;
-MOV R7, 1;
-ADD R2, R4, R6;
-ADD R1, R3, R5;
+MOV R0, #0; // initialize result to 0
+MOV R1, #1; // constant 1 for incrementing result
+MOV R2, 4; // get data memory location 4
+JMPZ R2, lab1; // if zero, skip next instruction
+ADD R0, R0, R1; // not zero, so increment result
+lab1: MOV R2, 5; // get data memory location 5
+JMPZ R2, lab2; // if zero, skip next instruction
+ADD R0, R0, R1; //not zero, so increment result
+lab2: MOV 9, R0; // store result in data memory location 9

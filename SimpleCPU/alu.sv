@@ -11,8 +11,8 @@ module alu  (
 			2'b00 :  OUT <= A;
 			2'b01 : OUT <= A + B;
 			2'b10 : OUT <= A - B;
-			default : OUT = '0
-			default: 
+			2'b11 : OUT <= ~A;
+			default : OUT = '0;
 		endcase
 	end
 

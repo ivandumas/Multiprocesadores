@@ -1,6 +1,446 @@
-vsim -gui work.alu work.asyncmem work.controllerfsm work.controllerfsm_sv_unit work.controlunit work.datamem work.datapath work.rf work.simplecpu work.simplecpu_tb
-# vsim -gui work.alu work.asyncmem work.controllerfsm work.controllerfsm_sv_unit work.controlunit work.datamem work.datapath work.rf work.simplecpu work.simplecpu_tb 
-# Start time: 00:13:59 on Aug 30,2021
+# Compile of alu.sv failed with 1 errors.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv failed with 1 errors.
+# Compile of controlunit.sv failed with 2 errors.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 1 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 5 failed with 7 errors.
+# Compile of alu.sv failed with 1 errors.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv failed with 2 errors.
+# Compile of controlunit.sv failed with 1 errors.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 1 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 5 failed with 7 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv failed with 2 errors.
+# Compile of controlunit.sv failed with 1 errors.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 1 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 4 failed with 6 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv failed with 1 errors.
+# Compile of controlunit.sv failed with 1 errors.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 1 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 4 failed with 5 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful with warnings.
+# Compile of controlunit.sv failed with 1 errors.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 1 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 3 failed with 4 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 1 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 2 failed with 3 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 2 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 2 failed with 4 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv failed with 1 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 2 failed with 3 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 2 errors.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 1 errors.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv failed with 1 errors.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.simplecpu_tb
+# vsim -gui work.simplecpu_tb 
+# Start time: 18:55:37 on Sep 13,2021
+# Loading sv_std.std
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+# ** Error: (vsim-8378) Port size (1) does not match connection size (8) for implicit .name connection port 'RF_W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/simplecpu.sv Line: 48
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 22
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 32
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(32): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(32): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(32): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(32): [TFMPC] - Missing connection for port 'W_data'.
+# Error loading design
+# End time: 18:55:38 on Sep 13,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 24
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv failed with 3 errors.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 1 failed with 3 errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.simplecpu_tb
+# vsim -gui work.simplecpu_tb 
+# Start time: 18:58:45 on Sep 13,2021
+# Loading sv_std.std
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/state
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/instmem/mem_array
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/instmem/data_out
+add wave -position insertpoint  \
+{sim:/simplecpu_tb/uut/instmem/mem_array[0]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[1]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[2]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[3]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[4]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[5]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[6]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[7]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[8]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[9]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[10]}
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/PC_clr \
+sim:/simplecpu_tb/uut/controller/fsm/PC_inc \
+sim:/simplecpu_tb/uut/controller/fsm/PC_ld \
+sim:/simplecpu_tb/uut/controller/fsm/I_rd \
+sim:/simplecpu_tb/uut/controller/fsm/IR_ld \
+sim:/simplecpu_tb/uut/controller/fsm/D_addr \
+sim:/simplecpu_tb/uut/controller/fsm/D_rd \
+sim:/simplecpu_tb/uut/controller/fsm/D_wr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_data \
+sim:/simplecpu_tb/uut/controller/fsm/RF_s0 \
+sim:/simplecpu_tb/uut/controller/fsm/RF_s1 \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_wr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_rd \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rq_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rq_rd \
+sim:/simplecpu_tb/uut/controller/fsm/alu_s0 \
+sim:/simplecpu_tb/uut/controller/fsm/alu_s1
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+vsim -gui work.alu work.asyncmem work.controllerfsm work.controllerfsm_sv_unit work.controlunit work.datamem work.datamux work.datapath work.rf work.simplecpu work.simplecpu_tb
+# End time: 19:16:10 on Sep 13,2021, Elapsed time: 0:17:25
+# Errors: 0, Warnings: 8
+# vsim -gui work.alu work.asyncmem work.controllerfsm work.controllerfsm_sv_unit work.controlunit work.datamem work.datamux work.datapath work.rf work.simplecpu work.simplecpu_tb 
+# Start time: 19:16:10 on Sep 13,2021
 # Loading sv_std.std
 # Loading work.alu
 # Loading work.asyncmem
@@ -8,134 +448,1389 @@ vsim -gui work.alu work.asyncmem work.controllerfsm work.controllerfsm_sv_unit w
 # Loading work.controllerfsm
 # Loading work.controlunit
 # Loading work.datamem
+# Loading work.datamux
 # Loading work.datapath
 # Loading work.rf
 # Loading work.simplecpu
 # Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
 add wave -position insertpoint  \
-sim:/simplecpu_tb/uut/rst \
-sim:/simplecpu_tb/uut/clk \
-sim:/simplecpu_tb/uut/pc \
-sim:/simplecpu_tb/uut/addr \
-sim:/simplecpu_tb/uut/data \
-sim:/simplecpu_tb/uut/rd \
-sim:/simplecpu_tb/uut/D_addr \
-sim:/simplecpu_tb/uut/D_rd \
-sim:/simplecpu_tb/uut/D_wr \
-sim:/simplecpu_tb/uut/D_dataout \
-sim:/simplecpu_tb/uut/D_datain \
-sim:/simplecpu_tb/uut/RF_s \
-sim:/simplecpu_tb/uut/RF_W_addr \
-sim:/simplecpu_tb/uut/RF_W_wr \
-sim:/simplecpu_tb/uut/RF_Rp_addr \
-sim:/simplecpu_tb/uut/RF_Rp_rd \
-sim:/simplecpu_tb/uut/RF_Rq_addr \
-sim:/simplecpu_tb/uut/RF_Rq_rd \
-sim:/simplecpu_tb/uut/alu_s0
-run
-run
-run
-run
-run
+{sim:/asyncmem/mem_array[0]} \
+{sim:/asyncmem/mem_array[1]} \
+{sim:/asyncmem/mem_array[2]} \
+{sim:/asyncmem/mem_array[3]} \
+{sim:/asyncmem/mem_array[4]}
 add wave -position insertpoint  \
-sim:/simplecpu/controller/clk
+sim:/controllerfsm/state
 add wave -position insertpoint  \
-sim:/simplecpu_tb/uut/instmem/raddr \
-sim:/simplecpu_tb/uut/instmem/waddr \
-sim:/simplecpu_tb/uut/instmem/data_in \
-sim:/simplecpu_tb/uut/instmem/we \
-sim:/simplecpu_tb/uut/instmem/ren \
-sim:/simplecpu_tb/uut/instmem/clk \
-sim:/simplecpu_tb/uut/instmem/data_out \
-sim:/simplecpu_tb/uut/instmem/mem_array
-run
-add wave -position insertpoint  \
-sim:/simplecpu_tb/uut/rst \
-sim:/simplecpu_tb/uut/clk \
-sim:/simplecpu_tb/uut/pc \
-sim:/simplecpu_tb/uut/addr \
-sim:/simplecpu_tb/uut/data \
-sim:/simplecpu_tb/uut/rd \
-sim:/simplecpu_tb/uut/D_addr \
-sim:/simplecpu_tb/uut/D_rd \
-sim:/simplecpu_tb/uut/D_wr \
-sim:/simplecpu_tb/uut/D_dataout \
-sim:/simplecpu_tb/uut/D_datain \
-sim:/simplecpu_tb/uut/RF_s \
-sim:/simplecpu_tb/uut/RF_W_addr \
-sim:/simplecpu_tb/uut/RF_W_wr \
-sim:/simplecpu_tb/uut/RF_Rp_addr \
-sim:/simplecpu_tb/uut/RF_Rp_rd \
-sim:/simplecpu_tb/uut/RF_Rq_addr \
-sim:/simplecpu_tb/uut/RF_Rq_rd \
-sim:/simplecpu_tb/uut/alu_s0
-# Break key hit
-restart
-run -continue
-run -continue
-add wave -position insertpoint  \
-sim:/simplecpu_tb/uut/rst \
-sim:/simplecpu_tb/uut/clk \
-sim:/simplecpu_tb/uut/pc \
-sim:/simplecpu_tb/uut/addr \
-sim:/simplecpu_tb/uut/data \
-sim:/simplecpu_tb/uut/rd \
-sim:/simplecpu_tb/uut/D_addr \
-sim:/simplecpu_tb/uut/D_rd \
-sim:/simplecpu_tb/uut/D_wr \
-sim:/simplecpu_tb/uut/D_dataout \
-sim:/simplecpu_tb/uut/D_datain \
-sim:/simplecpu_tb/uut/RF_s \
-sim:/simplecpu_tb/uut/RF_W_addr \
-sim:/simplecpu_tb/uut/RF_W_wr \
-sim:/simplecpu_tb/uut/RF_Rp_addr \
-sim:/simplecpu_tb/uut/RF_Rp_rd \
-sim:/simplecpu_tb/uut/RF_Rq_addr \
-sim:/simplecpu_tb/uut/RF_Rq_rd \
-sim:/simplecpu_tb/uut/alu_s0
-run -continue
-run -continue
-run -continue
-restart
-add wave -position insertpoint  \
-sim:/simplecpu_tb/uut/rst \
-sim:/simplecpu_tb/uut/clk \
-sim:/simplecpu_tb/uut/pc \
-sim:/simplecpu_tb/uut/addr \
-sim:/simplecpu_tb/uut/data \
-sim:/simplecpu_tb/uut/rd \
-sim:/simplecpu_tb/uut/D_addr \
-sim:/simplecpu_tb/uut/D_rd \
-sim:/simplecpu_tb/uut/D_wr \
-sim:/simplecpu_tb/uut/D_dataout \
-sim:/simplecpu_tb/uut/D_datain \
-sim:/simplecpu_tb/uut/RF_s \
-sim:/simplecpu_tb/uut/RF_W_addr \
-sim:/simplecpu_tb/uut/RF_W_wr \
-sim:/simplecpu_tb/uut/RF_Rp_addr \
-sim:/simplecpu_tb/uut/RF_Rp_rd \
-sim:/simplecpu_tb/uut/RF_Rq_addr \
-sim:/simplecpu_tb/uut/RF_Rq_rd \
-sim:/simplecpu_tb/uut/alu_s0
-run -continue
-run -continue
-run -continue
-run -continue
-run -continue
-run -continue
-run -continue
-run -continue
-add wave -position insertpoint  \
-sim:/simplecpu_tb/uut/controller/fsm/state \
-sim:/simplecpu_tb/uut/controller/fsm/nxtstate
+sim:/controllerfsm/PC_clr \
+sim:/controllerfsm/PC_inc \
+sim:/controllerfsm/PC_ld \
+sim:/controllerfsm/I_rd \
+sim:/controllerfsm/IR_ld \
+sim:/controllerfsm/D_addr \
+sim:/controllerfsm/D_rd \
+sim:/controllerfsm/D_wr \
+sim:/controllerfsm/RF_W_data \
+sim:/controllerfsm/RF_s0 \
+sim:/controllerfsm/RF_s1 \
+sim:/controllerfsm/RF_W_addr \
+sim:/controllerfsm/RF_W_wr \
+sim:/controllerfsm/RF_Rp_addr \
+sim:/controllerfsm/RF_Rp_rd \
+sim:/controllerfsm/RF_Rq_addr \
+sim:/controllerfsm/RF_Rq_rd \
+sim:/controllerfsm/alu_s0 \
+sim:/controllerfsm/alu_s1
 run
 restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/state
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+add wave -position insertpoint  \
+sim:/simplecpu/controller/fsm/state
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/state
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/PC_clr \
+sim:/simplecpu_tb/uut/controller/fsm/PC_inc \
+sim:/simplecpu_tb/uut/controller/fsm/PC_ld \
+sim:/simplecpu_tb/uut/controller/fsm/I_rd \
+sim:/simplecpu_tb/uut/controller/fsm/IR_ld \
+sim:/simplecpu_tb/uut/controller/fsm/D_addr \
+sim:/simplecpu_tb/uut/controller/fsm/D_rd \
+sim:/simplecpu_tb/uut/controller/fsm/D_wr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_data \
+sim:/simplecpu_tb/uut/controller/fsm/RF_s0 \
+sim:/simplecpu_tb/uut/controller/fsm/RF_s1 \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_wr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_rd \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rq_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rq_rd \
+sim:/simplecpu_tb/uut/controller/fsm/alu_s0 \
+sim:/simplecpu_tb/uut/controller/fsm/alu_s1
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/instmem/data_out
+add wave -position insertpoint  \
+{sim:/simplecpu_tb/uut/instmem/mem_array[0]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[1]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[2]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[3]}
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
 run
 add wave -position insertpoint  \
-sim:/simplecpu_tb/uut/controller/fsm/instruction
+{sim:/simplecpu_tb/uut/instmem/mem_array[4]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[5]} \
+{sim:/simplecpu_tb/uut/instmem/mem_array[6]}
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_zero
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/datapath/Rp_data_signal
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/Rp_data_signal
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/datamemory/W_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[0]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[1]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[2]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[3]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[4]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[5]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[6]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[7]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[8]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[9]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[10]} \
+{sim:/simplecpu_tb/uut/datamemory/mem_array[11]}
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'RegBank'.  Expected 11, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_wr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'Rp_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_addr'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv(33): [TFMPC] - Missing connection for port 'W_data'.
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (8) for port 'c'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/RegBank/Rp_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/RegBank/W_wr
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/ALU/A \
+sim:/simplecpu_tb/uut/execunit/ALU/B
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/RegBank/mem
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+run
+run
+run
+run
+run
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+run
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu
+# Loading work.asyncmem
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.controlunit
+# Loading work.datamem
+# Loading work.datamux
+# Loading work.datapath
+# Loading work.rf
+# Loading work.simplecpu
+# Loading work.simplecpu_tb
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /datapath/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+quit -sim
+# End time: 21:56:26 on Sep 13,2021, Elapsed time: 2:40:16
+# Errors: 0, Warnings: 7
+vsim -gui work.simplecpu_tb
+# vsim -gui work.simplecpu_tb 
+# Start time: 21:56:36 on Sep 13,2021
+# Loading sv_std.std
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/instmem/data_out
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/state
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/PC_clr \
+sim:/simplecpu_tb/uut/controller/fsm/PC_inc \
+sim:/simplecpu_tb/uut/controller/fsm/PC_ld \
+sim:/simplecpu_tb/uut/controller/fsm/I_rd \
+sim:/simplecpu_tb/uut/controller/fsm/IR_ld \
+sim:/simplecpu_tb/uut/controller/fsm/D_addr \
+sim:/simplecpu_tb/uut/controller/fsm/D_rd \
+sim:/simplecpu_tb/uut/controller/fsm/D_wr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_data \
+sim:/simplecpu_tb/uut/controller/fsm/RF_s0 \
+sim:/simplecpu_tb/uut/controller/fsm/RF_s1 \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_W_wr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_rd \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rq_addr \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rq_rd \
+sim:/simplecpu_tb/uut/controller/fsm/alu_s0 \
+sim:/simplecpu_tb/uut/controller/fsm/alu_s1
+run
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/controller/fsm/RF_Rp_zero
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful with warnings.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/RegBank/mem
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/Datamux/out
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/RegBank/W_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'out'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datamux.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/Datamux File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 23
+# ** Warning: (vsim-3015) [PCDPC] - Port size (16) does not match connection size (1) for port 'W_data'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/rf.sv(10).
+#    Time: 0 ps  Iteration: 0  Instance: /simplecpu_tb/uut/execunit/RegBank File: C:/Users/ivand/Desktop/Multiprocesadores/SimpleCPU/datapath.sv Line: 33
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/RegBank/Rp_data
 restart
 run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/Rp_data_signal
 restart
 run
-# End time: 00:54:36 on Aug 30,2021, Elapsed time: 0:40:37
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position insertpoint  \
+sim:/simplecpu_tb/uut/execunit/RF_Rp_zero
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Compile of alu.sv was successful.
+# Compile of asyncmem.sv was successful.
+# Compile of controllerfsm.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datamux.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of rf.sv was successful.
+# Compile of simplecpu.sv was successful.
+# Compile of simplecpu_tb.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.simplecpu_tb
+# Loading work.simplecpu
+# Loading work.asyncmem
+# Loading work.controlunit
+# Loading work.controllerfsm_sv_unit
+# Loading work.controllerfsm
+# Loading work.datapath
+# Loading work.datamux
+# Loading work.rf
+# Loading work.alu
+# Loading work.datamem
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 17:45:15 on Sep 14,2021, Elapsed time: 19:48:39
 # Errors: 0, Warnings: 1

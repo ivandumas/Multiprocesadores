@@ -20,21 +20,17 @@ module simplecpu (
 	logic [15:0] D_datain;
 	
 	// Control Unit <-> Datapath  interface wires
-	logic			 RF_s;
+	logic			 RF_s0,RF_s1;
 	logic [3:0]	 RF_W_addr;
 	logic			 RF_W_wr;
 	logic [3:0]	 RF_Rp_addr;
 	logic			 RF_Rp_rd;
 	logic [3:0]	 RF_Rq_addr;
 	logic 		 RF_Rq_rd;
-	logic 		 alu_s0;
-	logic			 RF_Rp_zero;//Señal para indicar brinco
-	logic [7:0]	 RF_W_data;//valor del brinco
-	
-	// Control Unit <->   interface wires
-	logic [7:0]	 Val_cons;//valor CTE
-	logic			 RF_cons;//Señal para activar MUX
-	logic			 RF_ext;//Señal para activar MUX
+	logic 		 alu_s0,alu_s1;
+	logic		 RF_Rp_zero;
+	logic [7:0]  RF_W_data;
+
 	
 	
 	asyncmem 		instmem 		(.raddr(addr), .ren(rd), .data_out(data), .waddr('0), .data_in('0), .we(1'b0), .clk('0));
@@ -74,4 +70,3 @@ module simplecpu (
 	assign pc = addr[9:0];		// for debug expose the program counter as an output to connect to LEDs
 
 endmodule
-
