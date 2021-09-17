@@ -1,4 +1,5 @@
-module datamem (
+module datamem 
+#(parameter SIZE = 1023;)( //Scalable design to meet the need of the application and save resources
 		input  logic 		clk,
 		input  logic   		rst,
 		input  logic [9:0] R_addr,W_addr,
@@ -8,7 +9,7 @@ module datamem (
 		output logic [31:0]	R_data
 		);
 
-  logic [31:0] mem_array [0:1023];
+  logic [31:0] mem_array [0:SIZE];
 
       always_ff @(posedge clk)
          begin

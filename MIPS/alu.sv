@@ -1,18 +1,26 @@
 module alu (
     input logic [2:0] aluOp,
     input logic [31:0] a,b,
-    output logic [31:0] out
+    output logic [31:0] out,
+    output logic zero
 );
 
-always_comb begin : AluMux
+logic [31:0] res;
+
+always_comb begin : ALU
     case (aluOp)
-        3'b000 : out <= a & b;
-        3'b001 : out <= a | b;
-        3'b010 : out <= a + b;
-        3'b110 : out <= a - b;
-        3'b111 : out <= (a < b) ? 32'h0000_0001 : 32'h0000_0000;
-        default: out <= 32'hzzzz_zzzz;
+        3'b000 : res = a & b;
+        3'b001 : res = a | b;
+        3'b010 : res = a + b;
+        3'b110 : res = a - b;
+        3'b111 : res = (a < b) ? 32'h0000_0001 : 32'h0000_0000;
+        default: res = 32'hzzzz_zzzz;
     endcase
+end
+
+always_comb begin
+    zero <= (res == '0) ? 1 : 0;
+    out <= res;
 end
     
 endmodule

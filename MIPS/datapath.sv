@@ -1,10 +1,11 @@
 module datapath (
     input logic clk,rst,
-    input logic RegWrite,AluOp,RegDst,MemRead,MemWrite,AluSrc,MemToReg,PCSrc
-
+    input logic RegWrite,ALUOp,RegDst,MemRead,MemWrite,ALUSrc,MemToReg,PCSrc,
+	output logic zero,
+	output logic [5:0] func, opcode
 );
 
-logic [31:0] instruction;
+logic [31:0] instruction,sign_extend;
 logic [31:0] pc_fetch;
 logic [31:0] toW_data,toA,toB,r_data2,alu_out,toMemMux;
 logic [4:0] toW_reg;
@@ -38,15 +39,20 @@ regmem Registers(
         .R_data2(r_data2)
 		);
 
+always_comb begin : signExtend
+	sign_extend = (instruction[15]==0) ? {16'h0000,instruction[15:0]} : {16'hFFFF,instruction[15:0]}
+end
+
 always_comb begin : muxtoALU
-    toB = (AluSrc) ? {16'hFFFF,instruction[15:0]} : r_data2;
+    toB = (ALUSrc) ? sign_extend : r_data2;
 end
 
 alu ALU(
-    .aluOp(AluOp), //Control signal
+    .ALUOp(ALUOp), //Control signal
     .a(toA),
     .b(toB),
-    .out(alu_out)
+    .out(alu_out),
+	.zero(zero)
 );
 
 datamem DataMemory (
@@ -62,6 +68,11 @@ datamem DataMemory (
 
 always_comb begin : muxMemToReg
     toW_data = (MemToReg) ? alu_out : toMemMux;
+end
+
+always_comb begin : assignations
+	opcode = instruction[31:26];
+	func = instruction[5:0]
 end
     
 endmodule

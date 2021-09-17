@@ -1,4 +1,6 @@
-module regmem (
+module regmem 
+#(parameter SIZE = 31) //Scalable design to meet the need of the application and save resources (even though 32 reg is standard)
+(
 		input  logic 		clk,
 		input  logic   		rst,
 		input  logic [4:0]  R_reg1,R_reg2,W_reg,
@@ -9,12 +11,12 @@ module regmem (
 	
 	integer i;
 
-  logic [31:0] mem_array [0:31];
+  logic [31:0] mem_array [0:SIZE];
 
-      always_ff @(posedge clk or posedge rst)
+      always_ff @(posedge clk)
          begin
             if (rst)
-				for(i = 0; i <= 31; i = i+1)
+				for(i = 0; i <= SIZE; i = i+1)
 					mem_array[i] <= 0;
 			else if (regWrite)
                 mem_array[W_reg] <= W_data;
