@@ -1,5 +1,5 @@
 module alu (
-    input logic [2:0] aluOp,
+    input logic [2:0] ALUOp,
     input logic [31:0] a,b,
     output logic [31:0] out,
     output logic zero
@@ -8,7 +8,7 @@ module alu (
 logic [31:0] res;
 
 always_comb begin : ALU
-    case (aluOp)
+    case (ALUOp)
         3'b000 : res = a & b;
         3'b001 : res = a | b;
         3'b010 : res = a + b;

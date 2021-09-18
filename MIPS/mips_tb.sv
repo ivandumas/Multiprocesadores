@@ -3,7 +3,7 @@ module mips_tb();
 	reg clk;
 	reg rst;
 	
-	MIPS_final mips (
+	mips MIPS_final(
 	.clk(clk),
 	.rst(rst)
 	);
