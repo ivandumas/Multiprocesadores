@@ -6,6 +6,7 @@ module datapath (
 );
 
 logic [31:0] instruction,sign_extend;
+logic [25:0] pc_jmp;
 logic [31:0] pc_fetch;
 logic [31:0] toW_data,toA,toB,r_data2,alu_out,toMemMux;
 logic [4:0] toW_reg;
@@ -14,7 +15,8 @@ pc InstructionFetch(
 	.clk(clk),
 	.rst(rst), 
 	.PCSrc(PCSrc),
-    .pc_offset({16'hFFFF,instruction[15:0]}),
+    .pc_offset(sign_extend),
+	.pc_jmp(pc_jmp),
 	.pc(pc_fetch)
 );
 
@@ -40,7 +42,7 @@ regmem Registers(
 		);
 
 always_comb begin : signExtend
-	sign_extend = (instruction[15]==0) ? {16'h0000,instruction[15:0]} : {16'hFFFF,instruction[15:0]}
+	sign_extend = (instruction[15]==0) ? {16'h0000,instruction[15:0]} : {16'hFFFF,instruction[15:0]};
 end
 
 always_comb begin : muxtoALU
@@ -72,7 +74,8 @@ end
 
 always_comb begin : assignations
 	opcode = instruction[31:26];
-	func = instruction[5:0]
+	func = instruction[5:0];
+	pc_jmp = instruction[25:0];
 end
     
 endmodule

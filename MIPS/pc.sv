@@ -1,6 +1,6 @@
 module pc (
-	input logic clk, rst, PCSrc,
-    input logic [31:0] pc_offset,
+	input logic clk, rst, PCSrc, Branch
+    input logic [31:0] pc_offset,pc_jmp,
 	output logic [31:0] pc
 );
 
@@ -16,7 +16,12 @@ always_comb begin : ADD
 end
 
 always_comb begin : mux
-    pc_d = (PCSrc) ? (offshift + pc_inc) : pc_inc;
+    case ({PCSrc,Branch})
+        2'b00: pc_d = pc_inc;
+        2'b01: pc_d = offshift + pc_inc;
+        2'b10; pc_d = pc_jmp;
+        default: pc_d = 32'hXXXX;
+    endcase
 end
 
 always_ff @( posedge clk ) begin : PC
