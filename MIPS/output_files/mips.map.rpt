@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mips
-Mon Sep 13 16:31:51 2021
+Sat Sep 18 21:08:18 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -14,10 +14,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
- 12. Analysis & Synthesis Suppressed Messages
+  9. Parameter Settings for User Entity Instance: datapath:Datapath|instmem:IntructionMemory
+ 10. Parameter Settings for User Entity Instance: datapath:Datapath|regmem:Registers
+ 11. Parameter Settings for User Entity Instance: datapath:Datapath|datamem:DataMemory
+ 12. Port Connectivity Checks: "datapath:Datapath|datamem:DataMemory"
+ 13. Port Connectivity Checks: "datapath:Datapath|instmem:IntructionMemory"
+ 14. Port Connectivity Checks: "datapath:Datapath|pc:InstructionFetch"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+ 18. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -44,14 +50,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Sep 13 16:31:51 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sat Sep 18 21:08:18 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; mips                                        ;
-; Top-level Entity Name           ; controlunit                                 ;
+; Top-level Entity Name           ; mips                                        ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 19                                          ;
+; Total pins                      ; 2                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -70,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; controlunit        ; mips               ;
+; Top-level entity name                                                           ; mips               ; mips               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -172,35 +178,43 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                 ; Library ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
+; regmem.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv      ;         ;
+; pc.sv                            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv          ;         ;
+; mips.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv        ;         ;
+; instmem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv     ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv    ;         ;
+; datamem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv     ;         ;
 ; controlunit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv ;         ;
+; ALUcontrol.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv  ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv         ;         ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                   ;
-+---------------------------------------------+-----------------+
-; Resource                                    ; Usage           ;
-+---------------------------------------------+-----------------+
-; Estimate of Logic utilization (ALMs needed) ; 7               ;
-;                                             ;                 ;
-; Combinational ALUT usage for logic          ; 8               ;
-;     -- 7 input functions                    ; 0               ;
-;     -- 6 input functions                    ; 6               ;
-;     -- 5 input functions                    ; 1               ;
-;     -- 4 input functions                    ; 0               ;
-;     -- <=3 input functions                  ; 1               ;
-;                                             ;                 ;
-; Dedicated logic registers                   ; 0               ;
-;                                             ;                 ;
-; I/O pins                                    ; 19              ;
-;                                             ;                 ;
-; Total DSP Blocks                            ; 0               ;
-;                                             ;                 ;
-; Maximum fan-out node                        ; opcode[0]~input ;
-; Maximum fan-out                             ; 7               ;
-; Total fan-out                               ; 73              ;
-; Average fan-out                             ; 1.59            ;
-+---------------------------------------------+-----------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Total DSP Blocks                            ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -208,7 +222,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |controlunit               ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 19   ; 0            ; |controlunit        ; controlunit ; work         ;
+; |mips                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |mips               ; mips        ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,22 +242,75 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:Datapath|instmem:IntructionMemory ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; SIZE           ; 1023  ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:Datapath|regmem:Registers ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; SIZE           ; 31    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: datapath:Datapath|datamem:DataMemory ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; SIZE           ; 1023  ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:Datapath|datamem:DataMemory"                                                                                                                                                ;
++--------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                                                             ;
++--------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; R_addr ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; W_addr ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (10 bits) it drives.  The 22 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++--------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:Datapath|instmem:IntructionMemory"                                                                                                 ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; clk  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; rst  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapath:Datapath|pc:InstructionFetch"                                                                                                              ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                            ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; pc_jmp ; Input ; Warning  ; Input port expression (26 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "pc_jmp[31..26]" will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 9                           ;
-;     normal            ; 9                           ;
-;         1 data inputs ; 1                           ;
-;         3 data inputs ; 1                           ;
-;         5 data inputs ; 1                           ;
-;         6 data inputs ; 6                           ;
-; boundary_port         ; 19                          ;
-;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.63                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -261,47 +328,56 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Sep 13 16:31:42 2021
+    Info: Processing started: Sat Sep 18 21:08:04 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c mips
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file controlunit.sv
-    Info (12023): Found entity 1: controlunit File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv Line: 11
-Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.sv
-    Info (12023): Found entity 1: ALUcontrol File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
-    Info (12023): Found entity 1: pc File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
-    Info (12023): Found entity 1: alu File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regmem.sv
     Info (12023): Found entity 1: regmem File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file datamem.sv
-    Info (12023): Found entity 1: datamem File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pc.sv
+    Info (12023): Found entity 1: pc File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mips_tb.sv
     Info (12023): Found entity 1: mips_tb File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mips.sv
     Info (12023): Found entity 1: mips File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file instmem.sv
     Info (12023): Found entity 1: instmem File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv Line: 1
-Info (12127): Elaborating entity "controlunit" for the top level hierarchy
-Info (286030): Timing-Driven Synthesis is running
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datamem.sv
+    Info (12023): Found entity 1: datamem File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controlunit.sv
+    Info (12023): Found entity 1: controlunit File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.sv
+    Info (12023): Found entity 1: ALUcontrol File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv Line: 1
+Info (12127): Elaborating entity "mips" for the top level hierarchy
+Info (12128): Elaborating entity "datapath" for hierarchy "datapath:Datapath" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv Line: 10
+Info (12128): Elaborating entity "pc" for hierarchy "datapath:Datapath|pc:InstructionFetch" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 23
+Info (12128): Elaborating entity "instmem" for hierarchy "datapath:Datapath|instmem:IntructionMemory" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 28
+Warning (10858): Verilog HDL warning at instmem.sv(9): object mem_array used but never assigned File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv Line: 9
+Info (12128): Elaborating entity "regmem" for hierarchy "datapath:Datapath|regmem:Registers" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 44
+Info (12128): Elaborating entity "alu" for hierarchy "datapath:Datapath|alu:ALU" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 60
+Warning (10230): Verilog HDL assignment warning at alu.sv(22): truncated value with size 32 to match size of target (1) File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv Line: 22
+Info (12128): Elaborating entity "datamem" for hierarchy "datapath:Datapath|datamem:DataMemory" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 71
+Info (12128): Elaborating entity "controlunit" for hierarchy "controlunit:ControlUnit" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv Line: 12
+Info (12128): Elaborating entity "ALUcontrol" for hierarchy "ALUcontrol:ALUControl" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv Line: 14
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/ivand/Desktop/Multiprocesadores/MIPS/output_files/mips.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv Line: 12
-    Warning (15610): No output dependent on input pin "rst" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv Line: 12
-Info (21057): Implemented 27 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 8 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Mon Sep 13 16:31:51 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:20
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv Line: 2
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv Line: 3
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
+    Info: Peak virtual memory: 4797 megabytes
+    Info: Processing ended: Sat Sep 18 21:08:18 2021
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:31
 
 
 +------------------------------------------+

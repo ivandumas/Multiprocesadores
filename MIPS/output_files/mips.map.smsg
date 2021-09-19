@@ -1,1 +1,2 @@
+Warning (10273): Verilog HDL warning at pc.sv(23): extended using "x" or "z" File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv Line: 23
 Info (10281): Verilog HDL Declaration information at pc.sv(5): object "pc" differs only in case from object "PC" in the same scope File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv Line: 5

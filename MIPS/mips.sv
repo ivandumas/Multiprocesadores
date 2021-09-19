@@ -2,23 +2,15 @@ module mips (
     input clk,rst
 );
 
-logic RegWrite,ALUOp,RegDst,MemRead,MemWrite,ALUSrc,MemToReg,PCSrc,zero,ALUCtrl;
+logic RegWrite,RegDst,MemRead,MemWrite,ALUSrc,MemToReg,PCSrc,zero,Branch;
+logic [2:0] ALUOp;
+logic [1:0] ALUCtrl;
 logic [5:0] func, opcode;
 
-datapath Datapath(
-    .clk(clk),
-    .rst(rst),
-    .*
-);
+datapath Datapath(.*);
 
-controlunit ControlUnit(
-    .clk(clk),
-    .rst(rst),
-    .*
-);
+controlunit ControlUnit(.*);
 
-ALUcontrol ALUControl(
-    .*
-);
+ALUcontrol ALUControl(.*);
 
 endmodule

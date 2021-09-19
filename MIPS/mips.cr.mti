@@ -1,0 +1,58 @@
+C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips_tb.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module mips_tb
+
+Top level modules:
+	mips_tb
+
+} {} {}} C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pc
+
+Top level modules:
+	pc
+
+} {} {}} C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALUcontrol
+
+Top level modules:
+	ALUcontrol
+
+} {} {}} C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module regmem
+
+Top level modules:
+	regmem
+
+} {} {}} C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module instmem
+
+Top level modules:
+	instmem
+
+} {} {}} C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module datamem
+
+Top level modules:
+	datamem
+
+} {} {}} C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv {1 {vlog -work work -sv -stats=none C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling package controlunit_sv_unit
+-- Compiling module controlunit
+
+Top level modules:
+	controlunit
+
+} {} {}}

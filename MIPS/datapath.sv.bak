@@ -1,7 +1,6 @@
 module datapath (
     input logic clk,rst,
-    input logic RegWrite,RegDst,MemRead,MemWrite,ALUSrc,MemToReg,PCSrc,Branch,
-	 input logic [2:0] ALUOp,
+    input logic RegWrite,ALUOp,RegDst,MemRead,MemWrite,ALUSrc,MemToReg,PCSrc,Branch,
 	output logic zero,
 	output logic [5:0] func, opcode
 );

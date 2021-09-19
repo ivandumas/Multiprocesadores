@@ -1,5 +1,5 @@
 module datamem 
-#(parameter SIZE = 1023;)( //Scalable design to meet the need of the application and save resources
+#(parameter SIZE = 1023)( //Scalable design to meet the need of the application and save resources
 		input  logic 		clk,
 		input  logic   		rst,
 		input  logic [9:0] R_addr,W_addr,
