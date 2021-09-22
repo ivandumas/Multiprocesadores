@@ -96,8 +96,8 @@ opcodes op;
                         RegDst = 1'b0;
                         RegWrite = 1'b0;
                         ALUSrc = 1'b1;
-                        ALUCtrl = 2'b11;
-                        MemWrite = 1'b1;
+                        ALUCtrl = 2'b10;
+                        MemWrite = 1'b0;
                         MemRead = 1'b0;
                         MemToReg = 1'b0;
                     end

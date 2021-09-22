@@ -11,7 +11,7 @@ cModel Technology
 dC:/intelFPGA_lite/20.1
 valu
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1632016799
+!s110 1632022782
 !i10b 1
 !s100 zzYdlfzKNm5GOUJZNoBJX2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,16 +19,16 @@ I14a]EkU0G9nJ=VV`[Xok>1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z3 dC:/Users/ivand/Desktop/Multiprocesadores/MIPS
-w1631990046
+w1632020337
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv
-!i122 25
-L0 1 26
-Z4 OV;L;2020.1;71
+!i122 313
+Z4 L0 1 26
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1632016799.000000
+!s108 1632022782.000000
 !s107 C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/MIPS/alu.sv|
 !i113 1
@@ -36,24 +36,24 @@ Z6 o-work work -sv
 Z7 tCvgOpt 0
 vALUcontrol
 R0
-Z8 !s110 1632016800
+Z8 !s110 1632022783
 !i10b 1
-!s100 DEO@`ObQ^a4iQBW1Wa8?d3
+!s100 HijIH@W_Ph0^;nhdSIlR;3
 R1
-I:Q>em3b7JUh4L61R1RJBI2
+IdOUTzNM^R:FaGB?JHnMN71
 R2
 S1
 R3
-w1631907707
+w1632020301
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv
-!i122 26
-L0 1 22
+!i122 314
 R4
+R5
 r1
 !s85 0
 31
-R5
+Z9 !s108 1632022783.000000
 !s107 C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/MIPS/ALUcontrol.sv|
 !i113 1
@@ -68,19 +68,19 @@ R2
 r1
 !s85 0
 !i10b 1
-!s100 7@m9;X`;hh?<O9nKlJ6ol0
-IhiMQM@Z5d4HfMn@@MWa9d1
+!s100 XjlEQ9^CIKXQg7OK=CVS90
+ICN4aOkoa1jYT2bfz59@?T3
 !s105 controlunit_sv_unit
 S1
 R3
-Z9 w1631919875
-Z10 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv
-Z11 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv
-!i122 27
+Z10 w1632019911
+Z11 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv
+Z12 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv
+!i122 315
 L0 11 108
-R4
+R5
 31
-Z12 !s108 1632016800.000000
+R9
 Z13 !s107 C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv|
 Z14 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/MIPS/controlunit.sv|
 !i113 1
@@ -98,14 +98,14 @@ IVRIRn;ReYh81[5L4:HnPW0
 !i103 1
 S1
 R3
-R9
 R10
 R11
-!i122 27
-L0 1 0
-R4
-31
 R12
+!i122 315
+L0 1 0
+R5
+31
+R9
 R13
 R14
 !i113 1
@@ -121,16 +121,16 @@ IJ?nSI=166hG;nINDhah[Y2
 R2
 S1
 R3
-w1632016734
+w1632020884
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv
-!i122 28
+!i122 316
 L0 1 23
-R4
+R5
 r1
 !s85 0
 31
-R12
+R9
 !s107 C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv|
 !i113 1
@@ -138,26 +138,26 @@ R6
 R7
 vdatapath
 R0
-Z15 !s110 1632016801
+Z15 !s110 1632022784
 !i10b 1
-!s100 ac2Jjm]JaKh8@LQNQGeC43
+!s100 =BO1b@P9lS7CV1caJ<6Ro2
 R1
-I<<<bGfmR9MW9BjEdL;ieS3
+IZmJ60HQ_9:1YI2fmTfS^e3
 R2
 S1
 R3
-w1631923980
-8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv
-FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv
-!i122 29
-L0 1 81
-R4
+w1632022559
+8C:\Users\ivand\Desktop\Multiprocesadores\MIPS\datapath.sv
+FC:\Users\ivand\Desktop\Multiprocesadores\MIPS\datapath.sv
+!i122 317
+L0 1 85
+R5
 r1
 !s85 0
 31
-R12
-!s107 C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv|
+R9
+!s107 C:\Users\ivand\Desktop\Multiprocesadores\MIPS\datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\ivand\Desktop\Multiprocesadores\MIPS\datapath.sv|
 !i113 1
 R6
 R7
@@ -165,22 +165,22 @@ vinstmem
 R0
 R15
 !i10b 1
-!s100 cVZ1N^QJ:_eCCkNdhX0WM2
+!s100 PY1R_^?8KX89@8@64]]P_2
 R1
-I_6fm==nX^zhkhW_O_Vgli1
+Ia`cKRH;5NM`nZ@V@h5[Xh2
 R2
 S1
 R3
-w1631919732
+w1632021193
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv
-!i122 30
-L0 1 20
-R4
+!i122 318
+L0 1 27
+R5
 r1
 !s85 0
 31
-Z16 !s108 1632016801.000000
+Z16 !s108 1632022784.000000
 !s107 C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/MIPS/instmem.sv|
 !i113 1
@@ -190,18 +190,18 @@ vmips
 R0
 R15
 !i10b 1
-!s100 a=ZBY>UISZcieYkk]m9kV2
+!s100 b3Bc[n4IEcdK6c]<i0ZlE3
 R1
-Ih;>zZj?7Qo4mZz`S^K[l20
+ImJUjONnI`IHd@=nalA6C52
 R2
 S1
 R3
-w1631924564
+w1632017106
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips.sv
-!i122 31
-L0 1 24
-R4
+!i122 319
+L0 1 16
+R5
 r1
 !s85 0
 31
@@ -215,18 +215,18 @@ vmips_tb
 R0
 R15
 !i10b 1
-!s100 T:b><8P3dVj=B8U4n61Ki2
+!s100 d9N6j2Q@3G[6R^h2^XPOC0
 R1
-IzCgCJ26]Q:jHc>7A1Jg7N0
+IMHU=fPPANfba?N>[5cl1I1
 R2
 S1
 R3
-w1631995963
+w1632022713
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips_tb.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips_tb.sv
-!i122 32
-L0 1 28
-R4
+!i122 320
+L0 2 42
+R5
 r1
 !s85 0
 31
@@ -238,20 +238,20 @@ R6
 R7
 vpc
 R0
-Z17 !s110 1632016802
+Z17 !s110 1632022785
 !i10b 1
-!s100 8hi950f7X:KBQbLRGKfSF2
+!s100 YY`Fj4Ego^O`kG2lT[l2^2
 R1
-Iz3of4zC5P_4][=Hem@V=82
+IGAP@KZ]1h@OAT`2lNFLMC0
 R2
 S1
 R3
-w1632016792
+w1632020509
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv
-!i122 33
-L0 1 33
-R4
+!i122 321
+L0 1 37
+R5
 r1
 !s85 0
 31
@@ -265,22 +265,22 @@ vregmem
 R0
 R17
 !i10b 1
-!s100 3k3^=BR>bQbXMaaBj1j270
+!s100 ?nmT1eO2Q2X9UK=:`l9=X1
 R1
-IU>^U;WC<en[IOAdoM_a?12
+IHeD77]^@aV5mO`LL7=U0b1
 R2
 S1
 R3
-w1631919673
+w1632022776
 8C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv
 FC:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv
-!i122 34
-L0 1 32
-R4
+!i122 322
+L0 1 45
+R5
 r1
 !s85 0
 31
-!s108 1632016802.000000
+!s108 1632022785.000000
 !s107 C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/ivand/Desktop/Multiprocesadores/MIPS/regmem.sv|
 !i113 1

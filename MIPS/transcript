@@ -1,36 +1,46 @@
 # Compile of alu.sv was successful.
 # Compile of ALUcontrol.sv was successful.
 # Compile of controlunit.sv was successful.
-# Compile of datamem.sv failed with 1 errors.
-# Compile of datapath.sv was successful.
-# Compile of instmem.sv was successful.
-# Compile of mips.sv was successful.
-# Compile of mips_tb.sv was successful.
-# Compile of pc.sv failed with 1 errors.
-# Compile of regmem.sv was successful.
-# 10 compiles, 2 failed with 2 errors.
-# Compile of alu.sv was successful.
-# Compile of ALUcontrol.sv was successful.
-# Compile of controlunit.sv was successful.
-# Compile of datamem.sv failed with 1 errors.
-# Compile of datapath.sv was successful.
-# Compile of instmem.sv was successful.
-# Compile of mips.sv was successful.
-# Compile of mips_tb.sv was successful.
-# Compile of pc.sv failed with 1 errors.
-# Compile of regmem.sv was successful.
-# 10 compiles, 2 failed with 2 errors.
-# Compile of alu.sv was successful.
-# Compile of ALUcontrol.sv was successful.
-# Compile of controlunit.sv was successful.
 # Compile of datamem.sv was successful.
 # Compile of datapath.sv was successful.
 # Compile of instmem.sv was successful.
 # Compile of mips.sv was successful.
 # Compile of mips_tb.sv was successful.
-# Compile of pc.sv failed with 3 errors.
+# Compile of pc.sv was successful.
 # Compile of regmem.sv was successful.
-# 10 compiles, 1 failed with 3 errors.
+# 10 compiles, 0 failed with no errors.
+vsim -gui work.mips_tb
+# vsim -gui work.mips_tb 
+# Start time: 21:36:10 on Sep 18,2021
+# Loading sv_std.std
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3008) [CNNODP] - Component name (InstructionMemory) is not on a downward path.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips_tb.sv Line: 26
+# ** Error: (vsim-3043) Unresolved reference to 'InstructionMemory' in MIPS_final.Datapath.InstructionMemory.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/mips_tb.sv Line: 26
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'IntructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/IntructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# Error loading design
+# End time: 21:36:11 on Sep 18,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 9
 # Compile of alu.sv was successful.
 # Compile of ALUcontrol.sv was successful.
 # Compile of controlunit.sv was successful.
@@ -42,3 +52,803 @@
 # Compile of pc.sv was successful.
 # Compile of regmem.sv was successful.
 # 10 compiles, 0 failed with no errors.
+vsim -gui work.mips_tb
+# vsim -gui work.mips_tb 
+# Start time: 21:37:19 on Sep 18,2021
+# Loading sv_std.std
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/Registers/mem_array
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/InstructionMemory/mem_array
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/InstructionMemory/inst
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv failed with 2 errors.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 1 failed with 2 errors.
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv failed with 1 errors.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 1 failed with 1 error.
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/InstructionFetch/pc
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/InstructionMemory/read_addr
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/InstructionMemory/inst
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'InstructionMemory'.  Expected 4, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 25
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'clk'.
+# ** Warning: (vsim-3722) C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv(25): [TFMPC] - Missing connection for port 'rst'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 62
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/ALU/ALUOp
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/ALU/res
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/ALU/a
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/ALU/b
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv failed with 1 errors.
+# 10 compiles, 1 failed with 1 error.
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/Registers/R_data1 \
+sim:/mips_tb/MIPS_final/Datapath/Registers/R_data2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/Registers/R_reg1 \
+sim:/mips_tb/MIPS_final/Datapath/Registers/R_reg2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful with warnings.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+add wave -position insertpoint  \
+sim:/mips_tb/MIPS_final/Datapath/Registers/W_data
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful with warnings.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of alu.sv was successful.
+# Compile of ALUcontrol.sv was successful.
+# Compile of controlunit.sv was successful.
+# Compile of datamem.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of instmem.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mips_tb.sv was successful with warnings.
+# Compile of pc.sv was successful.
+# Compile of regmem.sv was successful.
+# 10 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.mips_tb
+# Loading work.mips
+# Loading work.datapath
+# Loading work.pc
+# Loading work.instmem
+# Loading work.regmem
+# Loading work.alu
+# Loading work.datamem
+# Loading work.controlunit_sv_unit
+# Loading work.controlunit
+# Loading work.ALUcontrol
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (26) for port 'pc_jmp'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/pc.sv(3).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/InstructionFetch File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'R_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (10) does not match connection size (32) for port 'W_addr'. The port definition is at: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datamem.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /mips_tb/MIPS_final/Datapath/DataMemory File: C:/Users/ivand/Desktop/Multiprocesadores/MIPS/datapath.sv Line: 64
+run
+# End time: 20:10:30 on Sep 19,2021, Elapsed time: 22:33:11
+# Errors: 0, Warnings: 4

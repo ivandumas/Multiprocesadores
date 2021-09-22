@@ -25,7 +25,11 @@ always_comb begin : mux
 end
 
 always_ff @( posedge clk ) begin : PC
-    pc_q <= pc_d;
+    if (rst) begin
+        pc_q <= 0;
+    end else begin
+        pc_q <= pc_d;
+    end
 end
 
 always_comb pc = pc_q;

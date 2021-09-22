@@ -22,7 +22,9 @@ pc InstructionFetch(
 	.pc(pc_fetch)
 );
 
-instmem IntructionMemory(
+instmem InstructionMemory(
+	.clk(clk),
+	.rst(rst),
 	.read_addr(pc_fetch), 
     .inst(instruction)
 ); 
@@ -71,7 +73,7 @@ datamem DataMemory (
 		);
 
 always_comb begin : muxMemToReg
-    toW_data = (MemToReg) ? alu_out : toMemMux;
+    toW_data = (MemToReg) ? toMemMux : alu_out;
 end
 
 always_comb begin : assignations
